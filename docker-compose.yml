@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  currency-app:
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+    container_name: spi-currency-app
+    tty: true
+    stdin_open: true
