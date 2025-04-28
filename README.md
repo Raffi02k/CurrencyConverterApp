@@ -1,6 +1,6 @@
-## 🌍 Super Currency Converter
+## 🌍 Currency Converter
 
-Welcome to **Super Currency Converter** — the most fun way to convert currencies between SEK and USD, EUR, or BTC!
+Welcome to **Currency Converter** — the most fun way to convert currencies between SEK and USD, EUR, or BTC!
 
 This Java console app includes:
 - Real-time Bitcoin price fetching 💰
