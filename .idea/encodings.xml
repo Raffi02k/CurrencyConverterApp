@@ -3,6 +3,10 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/impl-bitcoin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/impl-bitcoin/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/impl-eur/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/impl-eur/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/impl-usd/src/main/java" charset="UTF-8" />

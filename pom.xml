@@ -12,6 +12,7 @@
         <module>api</module>
         <module>impl-usd</module>
         <module>impl-eur</module>
+        <module>impl-bitcoin</module>
         <module>app</module>
     </modules>
 
