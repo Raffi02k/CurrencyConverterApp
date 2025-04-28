@@ -1,4 +1,4 @@
-<img width="1440" alt="Screenshot 2025-04-28 at 10 20 15" src="https://github.com/user-attachments/assets/f8691851-7d53-4f45-9f00-5b852f6c7b30" /># 🌍 Super Currency Converter
+## 🌍 Super Currency Converter
 
 Welcome to **Super Currency Converter** — the most fun way to convert currencies between SEK and USD, EUR, or BTC!
 
