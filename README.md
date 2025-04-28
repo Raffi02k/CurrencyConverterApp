@@ -63,7 +63,9 @@ Java ServiceLoader (for plugin-based converters)
 
 Basic ANSI escape codes for colors
 
-🤔 Future Improvements
+---
+
+🤔 **Future Improvements**
  Save conversion history to a file
 
  Add support for more currencies (GBP, JPY, etc.)
@@ -72,10 +74,12 @@ Basic ANSI escape codes for colors
 
  Create a GUI version with JavaFX
 
-📬 Contact
+ ---
+
+📬 **Contact**
 Have ideas or feedback? Feel free to open an issue or pull request!
 
-Made with ❤️ by [RAFFI MEDZADAGHLIAN]
+Made with ❤️ by **[RAFFI MEDZADAGHLIAN]**
 
 yaml
 Copy
