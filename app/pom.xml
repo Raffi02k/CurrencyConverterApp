@@ -23,18 +23,21 @@
             <groupId>se.iths.java24</groupId>
             <artifactId>impl-usd</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
             <groupId>se.iths.java24</groupId>
             <artifactId>impl-eur</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
             <groupId>se.iths.java24</groupId>
             <artifactId>impl-bitcoin</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <scope>runtime</scope>
         </dependency>
 
 

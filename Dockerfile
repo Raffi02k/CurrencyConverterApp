@@ -1,34 +1,29 @@
-
 # Använd en officiell Java runtime som bas-image
-FROM openjdk:24-jdk-slim as build
+FROM maven:3-eclipse-temurin-24 as build
 
 # Sätt arbetskatalogen i containern
 WORKDIR /app
 
-# Kopiera Maven/Gradle-filer först för att utnyttja Docker cache
-COPY app/pom.xml ./
-# Om du använder Gradle istället för Maven, använd dessa rader istället:
-# COPY app/build.gradle app/settings.gradle ./
-# COPY app/gradle ./gradle
-
 # Kopiera källkoden
-COPY app/src ./src
+COPY . .
 
 # Bygg applikationen
 RUN ./mvnw package -DskipTests
-# Om du använder Gradle:
-# RUN ./gradlew build --no-daemon -x test
 
-# Använd en mindre image för runtime
-FROM openjdk:23-jre-slim
+# Använd en mindre image för runtime - VIKTIGT: Använd Java 24 istället för Java 17
+FROM eclipse-temurin:24-jre
 
 WORKDIR /app
 
 # Kopiera den byggda JAR-filen från build-steget
-COPY --from=build /app/target/*.jar app.jar
+COPY --from=build /app/app/target/*.jar app.jar
+COPY --from=build /app/api/target/*.jar api.jar
+COPY --from=build /app/impl-bitcoin/target/*.jar bitcoin.jar
+COPY --from=build /app/impl-eur/target/*.jar eur.jar
+COPY --from=build /app/impl-usd/target/*.jar usd.jar
 
 # Exponera porten som appen körs på
 EXPOSE 8080
 
-# Kör applikationen
-ENTRYPOINT ["java", "-jar", "app.jar"]
+# Kör applikationen med den identifierade huvudklassen
+ENTRYPOINT ["java", "-cp", "app.jar:api.jar:bitcoin.jar:eur.jar:usd.jar", "se.iths.java24.Main"]
